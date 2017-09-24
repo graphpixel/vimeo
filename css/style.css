@@ -1,0 +1,8 @@
+.mtb10{
+			margin:10px 0px;
+		}
+		.videoTitle{
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
