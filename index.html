@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vimeo List</title>
+	<script type="text/javascript" src='js/jquery-3.2.1.min.js'></script>
+	<script type="text/javascript" src='js/app.js'></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class='container'>
+		<div class='row pt10'>
+			<div class='col-sm-6'>
+				<div class='form-group' id='searchBox'>
+					<div class='input-group'>
+						<input type="text" class='form-control' id='txtSearchText'>
+						<button class='btn btn-info input-group-addon' id='btnSearch'>
+							Search
+						</button>
+					</div>
+				</div>
+				<div class="alert alert-warning alert-dismissible fade show" role="alert" id='searchInfoBox' style='display: none;'>
+				  	<button type="button" class="close" data-dismiss="alert" aria-label="Close" id='btnClearSearch'>
+				    	<span aria-hidden="true">&times;</span>
+				  	</button>
+				  	Showing results for <strong id='sSearchText'></strong>
+				</div>
+			</div>
+			<div class='col-sm-6 text-right'>
+				<label class='pt10'>
+					<input type='checkbox' id='chkFilterUserLikes' /> Videos from users have 10+ likes
+				</label>
+			</div>
+		</div>
+		<div id='videosContainer'>
+		</div>
+		<div class='row' id='paginationContainer'>
+			<div class='col-sm-8 text-left'>
+				<nav aria-label="Page navigation example">
+				  	<ul class="pagination justify-content-left" id='paginationBox'>
+				  	</ul>
+				</nav>
+			</div>
+			<div class='col-sm-4 text-right'>
+				show
+				<select id='lstPageLimit'>
+					<option value='10'>10</option>
+					<option value='20'>20</option>
+					<option value='50'>50</option>
+				</select> videos per page
+			</div>
+		</div>
+	</div>
+</body>
+</html>

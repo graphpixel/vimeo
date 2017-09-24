@@ -1,8 +1,16 @@
-.mtb10{
-			margin:10px 0px;
-		}
-		.videoTitle{
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
+.pt10{
+	padding-top: 10px;
+	}
+.videoBox{
+	margin:10px 0px;
+	}
+.profileImg{
+	width: 100%;
+	max-width: 100px;
+	border-radius: 50px;
+	}
+.videoTitle{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	}
